@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html>
+	<head>
+		<title>Irvin Game</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="myGameLibrary.js"></script>
+		 <link rel="stylesheet" type="text/css" href="gameStyle.css">
+		<script language="javascript" type="text/javascript" src="engine.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+<body onload="init()" style="background-image:url(images/pattern2.png);">
+
+
+<div class="row text-center" style="color:black;"><h1>JavaScript Based Web Game</h1> <p>"The knight that fucking hates ogres" is a web based platformer game created with JavaScript. Functions and if statements are combined to create hit detection, and gravity. Press the arrow keys to move, and the space bar to attack.
+</p>
+</div>
+
+		<div id="gameWindow" style="margin-left:auto; margin-right:auto;">
+			<!-- Disappears -->
+      <div id="introScreen">
+      	<div class="row text-center">
+        <div id="start" class="btn" onclick="startGame()">
+          <h1>Start Game</h1>
+        </div>
+        </div>
+		<div class="row text-center">
+        <div id="startTutorial" class="btn"  onclick="startTutorial()">
+          <h1>Tutorial</h1>
+        </div>
+        </div>
+        <div id="tutorial"><span style="position:relative; top:325px;"><h1>How to play:</h1><p> Press the arrow keys to move around the map. Press the space bar to attack.</p></span> 
+		<div id="goBack" class="btn text-center"  onclick="goBack()">
+          <h2>Press here to go back</h2>
+        </div>
+        </div>
+      </div>
+      
+			<img id="bg" src="images/BG.jpg">
+			<img id="bg2" src="images/BG2.png">
+			<img id="ladder" src="images/ladder.png">
+			<img id="apple" src="images/apple.png">
+			<img id="door" src="images/door.png">
+			<img id="hero" src="images/stand.gif">
+			<img id="ogre" src="images/ogreStand.gif">  
+			<img id="punk" src="images/punkStand.gif">  
+			<img id="lifebar" src="images/lifebar.gif">
+			
+
+			<div id="pink" src="images/pink.png"></div>
+			
+			<div id="btnContinue" onclick="nextLevel();">CONTINUE</div>
+		</div>
+		<div id="output"></div>
+	<audio id="sndMusic" preload="auto">
+			<source src="sound/getAway.mp3">
+			<source src="sound/getAway.wav">
+		</audio>
+
+		<audio id="sndJump" preload="auto">
+			<source src="sound/jump.mp3">
+			<source src="sound/jump.wav">
+		</audio>
+		<audio id="sndLand" preload="auto">
+			<source src="sound/land.mp3">
+			<source src="sound/land.wav">
+		</audio>
+		<audio id="sndSword" preload="auto">
+			<source src="sound/sword.mp3">
+			<source src="sound/sword.wav">
+		</audio>
+		
+	</body>
+</html>

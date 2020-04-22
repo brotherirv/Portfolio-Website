@@ -1,0 +1,135 @@
+			#gameWindow{
+				position: relative;
+				width: 1000px;
+				height: 600px;
+				overflow:hidden;
+			}
+
+
+
+			/*characters, items, and backgrounds */
+			#bg{position:absolute;}
+			#bg2{position:absolute;}
+			#ladder{position:absolute;}
+			#apple{position:absolute;}
+			#hero{	position: absolute; z-index:50;}
+			#ogre{position: absolute;}
+			#ogre2{position: absolute;}
+			#punk{position:absolute;}
+			#lifebar{position: absolute; z-index:100;}
+			#door{position:absolute;}
+
+			
+			#pink{
+				position: absolute;
+				background: url(images/pink.png);
+				z-index:101;
+			}
+
+			.platform{
+				position:absolute;
+				 background: url(images/ground.png) 0 0;
+				border-radius:5px;
+				
+			}
+			
+			
+			/*characters, items, and backgrounds end */
+
+
+			#introScreen{
+				position:absolute;
+				width:1000px;
+				height:600px;
+				z-index:105;
+				background-image:url("images/introScreen.gif");
+			}
+			
+		
+			
+			#tutorial{
+				visibility: hidden;
+				position:absolute;
+				top:0px;
+				width:1000px;
+				height:600px;
+				z-index:105;
+				background-image:url("images/introScreen.gif");
+				color:white;
+				text-align:center;
+			}
+
+			.btn {
+				position:relative;
+				color: white;
+				text-align: center;
+				font-size: 10pt;
+				cursor: pointer;
+				cursor: hand;
+				margin-left:auto;
+				margin-right:auto;
+				top:325px;
+}
+
+
+			#tutorialScreen{
+				position:absolute;
+				width:1000px;
+				height:600px;
+				z-index:101;
+				background-image:url("images/introScreen.gif");
+			}
+			
+
+			
+
+
+			#btnContinue{
+				position: absolute;
+				left: 400px;
+				top: 500px;
+
+				display: none;
+
+				background-color: rgba(255, 255, 255, 0.6);
+				color: black;
+
+				padding: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-radius: 10px;
+
+				text-align: center;
+				font-size: 14pt;
+
+				cursor: hand;
+				cursor: pointer;
+
+				z-index: 10;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select:none;
+				-ms-user-select: none;
+				user-select:none;
+			}
+			
+			#btnContinue:hover{
+				background-color: rgba(255, 255, 255, 0.9);
+			}
+			.msgGameOver{
+				font-size: 50pt;
+				text-align: center;
+				color: black;
+			}
+			
+			
+
+			.flip-H{
+			-moz-transform: scaleX(-1);
+			-webkit-transform: scaleX(-1);
+			-o-transform: scaleX(-1);
+			transform: scaleX(-1);
+			-ms-filter: fliph;
+			filter: fliph;
+			}
